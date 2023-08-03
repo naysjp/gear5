@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="icon" href="luffy1.png" />
+    <title>GEAR 5</title>
+  </head>
+
+  <body class="hero">
+    <div onmouseover="playMusic()">
+      <audio loop autoplay id="divAudio">
+        <source src="luffy.mp3" type="audio/mp3" />
+      </audio>
+    </div>
+
+    <div class="greetings">
+      <!-- silahkan menambah kata sesuai keinginan dengan <span>text...</span -->
+      <span>A</span>
+      <span>S</span>
+      <span>S</span>
+      <span>A</span>
+      <span>L</span>
+      <span>A</span>
+      <span>M</span>
+      <span>U</span>
+      <span>A</span>
+      <span>L</span>
+      <span>A</span>
+      <span>I</span>
+      <span>K</span>
+      <span>U</span>
+      <span>M</span>
+    </div>
+
+    <h2 class="g">
+      <span>Untuk para nakama semuanya 🖐</span> <br />
+      <span>Saksikan Gear 5 perdanaku di hari minggu nanti</span> <br />
+      <span>SHISHISHI 😁</span>
+    </h2>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"></script>
+
+    <script>
+      var vAudio = document.getElementById("divAudio");
+      var hasInit = false;
+      function playMusic() {
+        if (!hasInit) {
+          hasInit = true;
+          vAudio.play();
+        }
+      }
+    </script>
+  </body>
+</html>
