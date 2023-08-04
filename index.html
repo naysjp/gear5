@@ -18,11 +18,9 @@
   </head>
 
   <body class="hero">
-    <div onmouseover="playMusic()">
-      <audio loop autoplay id="divAudio">
-        <source src="luffy.mp3" type="audio/mp3" />
-      </audio>
-    </div>
+    <audio loop autoplay id="audio">
+      <source src="luffy.mp3" type="audio/mp3" />
+    </audio>
 
     <div class="greetings">
       <!-- silahkan menambah kata sesuai keinginan dengan <span>text...</span -->
@@ -43,12 +41,16 @@
       <span>M</span>
     </div>
 
-    <h2 class="g">
-      <span>Untuk para nakama semuanya 🖐</span> <br />
-      <span>Saksikan Gear 5 perdanaku di hari minggu nanti ya.</span> <br />
+    <div class="g">
+      <span>Untuk para nakama semuanya 🖐</span>
+      <span>Saksikan Gear 5 perdanaku di hari minggu nanti ya.</span>
       <br />
       <span>SHISHISHI 😁</span>
-    </h2>
+    </div>
+
+    <div class="img-fluid">
+      <img src="luffy1.png" alt="luffy" />
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
@@ -56,14 +58,9 @@
       crossorigin="anonymous"></script>
 
     <script>
-      var vAudio = document.getElementById("divAudio");
-      var hasInit = false;
-      function playMusic() {
-        if (!hasInit) {
-          hasInit = true;
-          vAudio.play();
-        }
-      }
+      window.addEventListener("click", () => {
+        document.getElementById("audio").play();
+      });
     </script>
   </body>
 </html>
