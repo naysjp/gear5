@@ -1,18 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&family=Itim&family=Poppins:wght@400;700&family=Sacramento&family=Work+Sans:wght@100;400;600;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/* body{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-} */
 
 body {
     margin: 0;
@@ -22,51 +14,31 @@ body {
     align-items: center;
     min-height: 100vh;
     position: relative;
-  }
-
-/* .hero {
-    background-image: url("thunder.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  } */
-
-.hero {
-position: relative;
-background-image: url("../img/thunder.png"); /* Ganti 'background-image.jpg' dengan URL gambar latar belakang Anda */
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
-background-attachment: fixed;
-min-height: 100vh;
-display: flex;
-justify-content: center;
-align-items: center;
 }
 
-/* .greetings{
-    font-family: 'Itim',cursive;
-    font-size: 4.5rem; 
-    font-weight: 900;
+.hero {
+    position: relative;
+    background-image: url("../img/thunder.png"); /* Ganti 'background-image.jpg' dengan URL gambar latar belakang Anda */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-} */
-
-.greetings {
-position: fixed;
-top: 0;
-left: 50%;
-transform: translate(-50%);
-padding: 10px;
-display: flex;
-justify-content: center;
-align-items: center;
 }
 
-/* .greetings > span{
-    animation: glow 3.5s ease-in-out infinite;
-} */
+.greetings {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .greetings span {
     font-family: "Itim", cursive;
@@ -74,45 +46,27 @@ align-items: center;
     font-weight: 900;
     margin: 5px;
     animation: glow 3.5s ease-in-out infinite;
-  }
-
-/* .g{
-    font-family: 'Poppins',cursive;
-    font-size: 1.7rem;
-    margin-top: -10px;
-    animation: glo 2s ease-in-out infinite;
-    text-align: center;
-} */
+}
 
 .g {
-font-family: "Poppins", cursive;
-font-size: 1.3rem;
-position: fixed;
-top: 10%;
-left: 50%;
-transform: translate(-50%, 10%);
-padding: 30px;
-text-align: center;
+    font-family: "Poppins", cursive;
+    font-size: 1.3rem;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    padding: 30px;
+    text-align: center;
 }
 
 .g span {
-/* font-size: 20px; */
-margin: 5px;
-display: block;
-animation: glo 2s ease-in-out infinite;
+    margin: 5px;
+    display: block;
+    animation: glo 2s ease-in-out infinite;
 }
 
-/* .img-fluid {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  } */
 .img-fluid img {
-    width: 24%;
+    width: 30%;
     height: auto;
     display: block;
     position: fixed;
@@ -122,7 +76,7 @@ animation: glo 2s ease-in-out infinite;
 }
 
 
-
+/* animasi text */
 @keyframes glo{
     0%, 100%{
         color: navy;
@@ -193,10 +147,7 @@ animation: glo 2s ease-in-out infinite;
 
     .hero {
         background-image: url("../img/thunder.jpg");
-        /* background-position: center;
-        background-repeat: no-repeat;
-        background-size: fixed; */
-      }
+    }
 
     .greetings{
         position: fixed;
@@ -210,13 +161,11 @@ animation: glo 2s ease-in-out infinite;
     }
 
     .greetings span {
-        /* font-family: "Itim", cursive; */
         font-size: 1.5rem;
         letter-spacing: -4px;
         font-weight: 900;
         margin: 5px;
-        /* animation: glow 3.5s ease-in-out infinite; */
-      }
+    }
 
     .g {
         position: static;
@@ -235,7 +184,7 @@ animation: glo 2s ease-in-out infinite;
     }
 
     .img-fluid img {
-        width: 70%;
+        width: 76%;
         height: auto;
         display: block;
         position: fixed;
@@ -249,10 +198,7 @@ animation: glo 2s ease-in-out infinite;
 
     .hero {
         background-image: url("../img/thunder.jpg");
-        /* background-position: center;
-        background-repeat: no-repeat;
-        background-size: fixed; */
-      }
+    }
 
     .greetings{
         position: fixed;
@@ -266,12 +212,10 @@ animation: glo 2s ease-in-out infinite;
     }
 
     .greetings span {
-        /* font-family: "Itim", cursive; */
         font-size: 2.35rem;
         font-weight: 900;
         margin: 5px;
-        /* animation: glow 3.5s ease-in-out infinite; */
-      }
+    }
 
     .g {
         position: static;
@@ -290,7 +234,7 @@ animation: glo 2s ease-in-out infinite;
     }
 
     .img-fluid img {
-        width: 40%;
+        width: 46%;
         height: auto;
         display: block;
         position: fixed;
@@ -298,17 +242,13 @@ animation: glo 2s ease-in-out infinite;
         left: 50%;
         transform: translateX(-50%);
     }
-
 }
 
 @media (min-width: 769px) and (max-width: 920px) {
 
     .hero {
         background-image: url("../img/thunder.png");
-        /* background-position: center;
-        background-repeat: no-repeat;
-        background-size: fixed; */
-      }
+    }
 
     .greetings{
         position: fixed;
@@ -322,12 +262,10 @@ animation: glo 2s ease-in-out infinite;
     }
 
     .greetings span {
-        /* font-family: "Itim", cursive; */
         font-size: 2.2rem;
         font-weight: 900;
         margin: 5px;
-        /* animation: glow 3.5s ease-in-out infinite; */
-      }
+    }
 
     .g {
         position: static;
@@ -346,7 +284,7 @@ animation: glo 2s ease-in-out infinite;
     }
 
     .img-fluid img {
-        width: 35%;
+        width: 41%;
         height: auto;
         display: block;
         position: fixed;
@@ -354,19 +292,13 @@ animation: glo 2s ease-in-out infinite;
         left: 50%;
         transform: translateX(-50%);
     }
-
 }
-
-
 
 @media (min-width: 921px) and (max-width: 1280px) {
 
     .hero {
         background-image: url("../img/thunder.png");
-        /* background-position: center;
-        background-repeat: no-repeat;
-        background-size: fixed; */
-      }
+    }
 
     .greetings{
         position: fixed;
@@ -380,12 +312,10 @@ animation: glo 2s ease-in-out infinite;
     }
 
     .greetings span {
-        /* font-family: "Itim", cursive; */
         font-size: 3rem;
         font-weight: 900;
         margin: 5px;
-        /* animation: glow 3.5s ease-in-out infinite; */
-      }
+    }
 
     .g {
         position: static;
@@ -404,7 +334,7 @@ animation: glo 2s ease-in-out infinite;
     }
 
     .img-fluid img {
-        width: 30%;
+        width: 36%;
         height: auto;
         display: block;
         position: fixed;
@@ -412,6 +342,5 @@ animation: glo 2s ease-in-out infinite;
         left: 50%;
         transform: translateX(-50%);
     }
-
 }
 
